@@ -1,4 +1,4 @@
-# 📊 RESUMEN EJECUTIVO - PROBLEMA DE TRANSBORDO
+# 📊 RESUMEN - PROBLEMA DE TRANSBORDO
 
 ## Optimización y Análisis de Sensibilidad
 
