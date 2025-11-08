@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GhostTextManager">
+    <option name="inputs">
+      <map>
+        <entry key="actualiza todo para que quede como las imagenes con el ejemplo que te di para que quede aso">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762573647271" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="continua donde te quedaste">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762559212149" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="has esto:&#10;PROBLEMA DE TRANSBORDO CON CAPACIDADES - OPTIMIZACIÓN&#10;&#10;ESTRUCTURA DE LA RED:&#10;- 2 Fuentes: S1 (900 unidades), S2 (700 unidades)&#10;- 3 Centros de Transbordo: H1, H2, H3&#10;- 5 Destinos: D1 (300), D2 (250), D3 (350), D4 (400), D5 (300)&#10;&#10;VARIABLES DE DECISIÓN:&#10;S1H1, S1H2, S1H3, S2H1, S2H2, S2H3, H1D1, H1D2, H1D3, H1D4, H2D1, H2D2, H2D3, H2D4, H2D5, H3D2, H3D3, H3D4, H3D5&#10;&#10;FUNCIÓN OBJETIVO (MINIMIZAR):&#10;Z = 4*S1H1 + 6*S1H2 + 5*S1H3 + 3*S2H1 + 4*S2H2 + 6*S2H3 + 8*H1D1 + 6*H1D2 + 7*H1D3 + 9*H1D4 + 7*H2D1 + 5*H2D2 + 6*H2D3 + 4*H2D4 + 5*H2D5 + 8*H3D2 + 5*H3D3 + 7*H3D4 + 6*H3D5&#10;&#10;RESTRICCIONES DE OFERTA:&#10;1) S1H1 + S1H2 + S1H3 = 900&#10;2) S2H1 + S2H2 + S2H3 = 700&#10;&#10;RESTRICCIONES DE BALANCE EN TRANSBORDOS:&#10;3) S1H1 + S2H1 = H1D1 + H1D2 + H1D3 + H1D4  (H1)&#10;4) S1H2 + S2H2 = H2D1 + H2D2 + H2D3 + H2D4 + H2D5  (H2)&#10;5) S1H3 + S2H3 = H3D2 + H3D3 + H3D4 + H3D5  (H3)&#10;&#10;RESTRICCIONES DE DEMANDA:&#10;6) H1D1 + H2D1 = 300  (D1)&#10;7) H1D2 + H2D2 + H3D2 = 250  (D2)&#10;8) H1D3 + H2D3 + H3D3 = 350  (D3)&#10;9) H1D4 + H2D4 + H3D4 = 400  (D4)&#10;10) H2D5 + H3D5 = 300  (D5)&#10;&#10;RESTRICCIONES DE CAPACIDAD (VERSIÓN CON LÍMITES):&#10;S1H1 ≤ 600, S1H2 ≤ 400, S1H3 ≤ 300, S2H1 ≤ 500, S2H2 ≤ 300, S2H3 ≤ 400,&#10;H1D1 ≤ 250, H1D2 ≤ 300, H1D3 ≤ 250, H1D4 ≤ 300, H2D1 ≤ 150, H2D2 ≤ 200,&#10;H2D3 ≤ 300, H2D4 ≤ 350, H2D5 ≤ 250, H3D2 ≤ 150, H3D3 ≤ 200, H3D4 ≤ 250, H3D5 ≤ 250&#10;&#10;NO NEGATIVIDAD:&#10;Todas las variables ≥ 0&#10;&#10;SOLUCIÓN ÓPTIMA CONOCIDA (SIN CAPACIDADES):&#10;S1H1=550, S1H2=0, S1H3=350, S2H1=0, S2H2=700, S2H3=0,&#10;H1D1=300, H1D2=250, H1D3=0, H1D4=0, H2D1=0, H2D2=0, H2D3=0, H2D4=400, H2D5=300,&#10;H3D2=0, H3D3=350, H3D4=0, H3D5=0&#10;Costo total Z = 13500&#10;&#10;REQUERIMIENTO:&#10;Generar código Python usando PuLP para resolver ambas versiones:&#10;1. Sin restricciones de capacidad&#10;2. Con restricciones de capacidad&#10;Comparar resultados y analizar el impacto de las capacidades en la solución óptima.">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762572301683" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="has un RESUMEN_EJECUTIVO.md&#10;analisis_sensibilidad.py&#10;problema_transbordo.py&#10;programa_unificado.py (debe tener lo de sensibilidad y transbordo.">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762572910675" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="puedes hacerlo con este menu?&#10;PROGRAMA UNIFICADO - PROBLEMA DE TRANSBORDO Y ANÁLISIS DE SENSIBILIDAD&#10;================================================================================&#10;1. Resolver problema con PuLP&#10;2. Resolver problema con SciPy (si está disponible)&#10;3. Mostrar solución detallada&#10;4. Ejecutar análisis de sensibilidad completo&#10;5. Análisis de precios sombra&#10;6. Simulación de escenarios&#10;7. Mostrar recomendaciones gerenciales&#10;8. Ejecutar todo (solución + análisis completo)&#10;9. Salir">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762574311916" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="quiero que le agregues esto tambien">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762572637376" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="quiero que me ayudes a hacer un programa para la materia de optimizacion de ingenieria industrial, quiero que me des todo esto que te voy a dar y que se vea de esta forma:&#10;&#10;PROBLEMA DE TRANSBORDO CON CAPACIDADES - OPTIMIZACIÓN&#10;&#10;ESTRUCTURA DE LA RED:&#10;- 2 Fuentes: S1 (900 unidades), S2 (700 unidades)&#10;- 3 Centros de Transbordo: H1, H2, H3&#10;- 5 Destinos: D1 (300), D2 (250), D3 (350), D4 (400), D5 (300)&#10;&#10;VARIABLES DE DECISIÓN:&#10;S1H1, S1H2, S1H3, S2H1, S2H2, S2H3, H1D1, H1D2, H1D3, H1D4, H2D1, H2D2, H2D3, H2D4, H2D5, H3D2, H3D3, H3D4, H3D5&#10;&#10;FUNCIÓN OBJETIVO (MINIMIZAR):&#10;Z = 4*S1H1 + 6*S1H2 + 5*S1H3 + 3*S2H1 + 4*S2H2 + 6*S2H3 + 8*H1D1 + 6*H1D2 + 7*H1D3 + 9*H1D4 + 7*H2D1 + 5*H2D2 + 6*H2D3 + 4*H2D4 + 5*H2D5 + 8*H3D2 + 5*H3D3 + 7*H3D4 + 6*H3D5&#10;&#10;RESTRICCIONES DE OFERTA:&#10;1) S1H1 + S1H2 + S1H3 = 900&#10;2) S2H1 + S2H2 + S2H3 = 700&#10;&#10;RESTRICCIONES DE BALANCE EN TRANSBORDOS:&#10;3) S1H1 + S2H1 = H1D1 + H1D2 + H1D3 + H1D4  (H1)&#10;4) S1H2 + S2H2 = H2D1 + H2D2 + H2D3 + H2D4 + H2D5  (H2)&#10;5) S1H3 + S2H3 = H3D2 + H3D3 + H3D4 + H3D5  (H3)&#10;&#10;RESTRICCIONES DE DEMANDA:&#10;6) H1D1 + H2D1 = 300  (D1)&#10;7) H1D2 + H2D2 + H3D2 = 250  (D2)&#10;8) H1D3 + H2D3 + H3D3 = 350  (D3)&#10;9) H1D4 + H2D4 + H3D4 = 400  (D4)&#10;10) H2D5 + H3D5 = 300  (D5)&#10;&#10;RESTRICCIONES DE CAPACIDAD (VERSIÓN CON LÍMITES):&#10;S1H1 ≤ 600, S1H2 ≤ 400, S1H3 ≤ 300, S2H1 ≤ 500, S2H2 ≤ 300, S2H3 ≤ 400,&#10;H1D1 ≤ 250, H1D2 ≤ 300, H1D3 ≤ 250, H1D4 ≤ 300, H2D1 ≤ 150, H2D2 ≤ 200,&#10;H2D3 ≤ 300, H2D4 ≤ 350, H2D5 ≤ 250, H3D2 ≤ 150, H3D3 ≤ 200, H3D4 ≤ 250, H3D5 ≤ 250&#10;&#10;NO NEGATIVIDAD:&#10;Todas las variables ≥ 0&#10;&#10;SOLUCIÓN ÓPTIMA CONOCIDA (SIN CAPACIDADES):&#10;S1H1=550, S1H2=0, S1H3=350, S2H1=0, S2H2=700, S2H3=0,&#10;H1D1=300, H1D2=250, H1D3=0, H1D4=0, H2D1=0, H2D2=0, H2D3=0, H2D4=400, H2D5=300,&#10;H3D2=0, H3D3=350, H3D4=0, H3D5=0&#10;Costo total Z = 13500&#10;&#10;REQUERIMIENTO:&#10;Generar código Python usando PuLP para resolver ambas versiones:&#10;1. Sin restricciones de capacidad&#10;2. Con restricciones de capacidad&#10;Comparar resultados y analizar el impacto de las capacidades en la solución óptima.">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762558486335" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+        <entry key="recuerda que este es el problema principal no el que me estas dando">
+          <value>
+            <GhostTextMetaData>
+              <option name="count" value="1.0" />
+              <option name="timestamps">
+                <list>
+                  <option value="1762573584076" />
+                </list>
+              </option>
+            </GhostTextMetaData>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
